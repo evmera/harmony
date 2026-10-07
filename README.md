@@ -14,13 +14,31 @@ npm install @evmera/harmony
 
 ## Usage
 
+Import the Harmony stylesheet:
+
+```js
+import '@evmera/harmony/styles.css'
+```
+
 Import components directly from the package:
 
 ```jsx
-import { Button } from "@evmera/harmony";
+import { Button } from '@evmera/harmony'
 
 export default function App() {
-  return <Button>Continue</Button>;
+  return <Button>Continue</Button>
+}
+```
+
+## Font
+
+Harmony includes Google Sans.
+
+To use Google Sans as the application font, set the global body font variable:
+
+```css
+:root {
+  --global-font-body: 'Google Sans', sans-serif;
 }
 ```
 
