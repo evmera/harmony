@@ -1,0 +1,120 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import './styles.css';
+
+<Meta title="docs/introduction" />
+
+<div className="harmony-docs">
+  <div className="harmony-docs__eyebrow">
+    <span className="harmony-docs__brand">Evmera</span>
+    <span>/</span>
+    <span>Harmony</span>
+  </div>
+
+  <section className="harmony-docs__hero">
+    <div>
+      <h1 className="harmony-docs__title">Harmony</h1>
+      <p className="harmony-docs__lead">
+        Evmera ürünlerinde tutarlı, erişilebilir ve sürdürülebilir arayüzler oluşturmak için
+        kullanılan tasarım sistemi.
+      </p>
+
+      <div className="harmony-docs__actions">
+        <a className="harmony-docs__action-primary" href="#quick-start">Başlayın</a>
+        <a className="harmony-docs__action-link" href="#system">Sistemi keşfedin →</a>
+      </div>
+    </div>
+
+    <div className="harmony-docs__system" id="system">
+      <div className="harmony-docs__system-row">
+        <span className="harmony-docs__system-label">component</span>
+        <span className="harmony-docs__preview-button">Button</span>
+      </div>
+
+      <div className="harmony-docs__system-row">
+        <span className="harmony-docs__system-label">colors</span>
+        <span className="harmony-docs__swatches">
+          <span className="harmony-docs__swatch harmony-docs__swatch--foreground" />
+          <span className="harmony-docs__swatch harmony-docs__swatch--muted" />
+          <span className="harmony-docs__swatch harmony-docs__swatch--surface" />
+          <span className="harmony-docs__swatch harmony-docs__swatch--accent" />
+        </span>
+      </div>
+
+      <div className="harmony-docs__system-row">
+        <span className="harmony-docs__system-label">typography</span>
+        <span className="harmony-docs__system-value">Aa · 16 / 24 · 500</span>
+      </div>
+
+      <div className="harmony-docs__system-row">
+        <span className="harmony-docs__system-label">radius</span>
+        <span className="harmony-docs__system-value">12px</span>
+      </div>
+
+      <div className="harmony-docs__system-row">
+        <span className="harmony-docs__system-label">duration</span>
+        <span className="harmony-docs__system-value">200ms</span>
+      </div>
+    </div>
+  </section>
+
+  <section className="harmony-docs__sections">
+    <div>
+      <span className="harmony-docs__section-index">01</span>
+      <h2 className="harmony-docs__section-title">Tasarım ilkeleri</h2>
+      <p className="harmony-docs__section-copy">
+        Harmony’nin kararlarını yönlendiren temel yaklaşım ve ortak tasarım dili.
+      </p>
+    </div>
+
+    <div>
+      <span className="harmony-docs__section-index">02</span>
+      <h2 className="harmony-docs__section-title">Tokens</h2>
+      <p className="harmony-docs__section-copy">
+        Renk, tipografi, radius ve motion değerlerini tek bir kaynaktan yönetin.
+      </p>
+    </div>
+
+    <div>
+      <span className="harmony-docs__section-index">03</span>
+      <h2 className="harmony-docs__section-title">Bileşenler</h2>
+      <p className="harmony-docs__section-copy">
+        Ürün arayüzlerinin temelini oluşturan tekrar kullanılabilir yapı taşları.
+      </p>
+    </div>
+
+    <div>
+      <span className="harmony-docs__section-index">04</span>
+      <h2 className="harmony-docs__section-title">Örüntüler</h2>
+      <p className="harmony-docs__section-copy">
+        Bileşenlerin birlikte nasıl kullanılacağını tanımlayan ortak arayüz kalıpları.
+      </p>
+    </div>
+  </section>
+
+  <section className="harmony-docs__quick-start" id="quick-start">
+    <h2 className="harmony-docs__quick-start-title">Hızlı başlangıç</h2>
+    <p className="harmony-docs__quick-start-copy">
+      Harmony’yi projeye eklemek için temel üç adım.
+    </p>
+
+    <div className="harmony-docs__steps">
+      <div className="harmony-docs__step">
+        <span className="harmony-docs__step-index">01</span>
+        <h3 className="harmony-docs__step-title">Paketi ekleyin</h3>
+        <code className="harmony-docs__code">npm install @evmera/harmony</code>
+      </div>
+
+      <div className="harmony-docs__step">
+        <span className="harmony-docs__step-index">02</span>
+        <h3 className="harmony-docs__step-title">Stilleri içe alın</h3>
+        <code className="harmony-docs__code">import '@evmera/harmony/styles.css'</code>
+      </div>
+
+      <div className="harmony-docs__step">
+        <span className="harmony-docs__step-index">03</span>
+        <h3 className="harmony-docs__step-title">Bileşeni kullanın</h3>
+        <code className="harmony-docs__code">import &#123; Button &#125; from '@evmera/harmony'</code>
+      </div>
+    </div>
+  </section>
+</div>
