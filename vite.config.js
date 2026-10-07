@@ -24,6 +24,13 @@ export default defineConfig({
       ],
     },
   },
+  experimental: {
+    renderBuiltUrl(filename) {
+      if (filename.endsWith('.ttf')) {
+        return `./${filename}`
+      }
+    },
+  },
   resolve: {
     alias: {
       '@': new URL('./src', import.meta.url).pathname,
