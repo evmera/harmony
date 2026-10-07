@@ -10,3 +10,10 @@ export const Default = {
     children: "Button",
   },
 };
+
+export const Disabled = {
+  args: {
+    children: "Button",
+    disabled: true,
+  },
+};
